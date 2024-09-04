@@ -102,7 +102,7 @@ let PayloadFormatter = {
         tamperAlarm: [
             "0~ Not Triggered",
             "1~ Tamper Detected"
-        ],
+        ]
     },
 
     _bytesToHexString: function(bytes, start=0, length=null) {
@@ -117,14 +117,6 @@ let PayloadFormatter = {
             char.push(dataHexStr);
         }
         return char.join("");
-    },
-
-    _bytesToBase64(byteArray) {
-        let binaryString = '';
-        for (let i = 0; i < byteArray.length; i++) {
-            binaryString += String.fromCharCode(byteArray[i]);
-        }
-        return btoa(binaryString);
     },
 
     _bytesToInt: function(bytes, start, len) {
@@ -277,7 +269,6 @@ let PayloadFormatter = {
             return output;
 
         output.data.payload.port = dataPort;
-        output.data.payload.base64 = this._bytesToBase64(input.bytes);
         output.data.payload.hexadecimal = this._bytesToHexString(input.bytes);
         output.data.payload.type = this.messaging.payloadType[(dataPort - 1)];
 
