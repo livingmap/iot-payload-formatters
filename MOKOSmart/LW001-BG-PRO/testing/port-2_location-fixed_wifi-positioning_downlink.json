@@ -1,0 +1,130 @@
+{
+    "deduplicationId": "cee9ac2b-284e-4b5a-89a1-c66a647932a1",
+    "time": "2024-08-29T10:30:35.566+00:00",
+    "deviceInfo": {
+        "tenantId": "fff36549-75a5-40f7-a847-98807d88794d",
+        "tenantName": "Living Map",
+        "applicationId": "ae8e2900-2051-4f63-adae-a3ec362a3a6c",
+        "applicationName": "Living Map Equipment Testing",
+        "deviceProfileId": "e6e471e2-14e5-4c0a-91fa-e0f798d3c28b",
+        "deviceProfileName": "Mokosmart LW001-BG-PRO",
+        "deviceName": "GPS Tracker 004",
+        "devEui": "f48af7ffffea79d8",
+        "deviceClassEnabled": "CLASS_A",
+        "tags": {}
+    },
+    "devAddr": "fe00a062",
+    "adr": true,
+    "dr": 2,
+    "fCnt": 8,
+    "fPort": 2,
+    "confirmed": false,
+    "data": "QRfhAAfoCB0KHiIAFUDWPK4QterIhIx882DFyISMfPNixQ==",
+    "object": {
+        "port": 2,
+        "tamper_alarm_code": 0,
+        "payload_type": "Location Fixed",
+        "timestamp": 1724927436,
+        "temperature": "23°C",
+        "motion_state_since_last_paylaod": "No",
+        "tamper_alarm": "Not triggered",
+        "mac_data": [
+            {
+                "mac": "40d63cae10b5",
+                "rssi": "-22dBm"
+            },
+            {
+                "rssi": "-59dBm",
+                "mac": "c8848c7cf360"
+            },
+            {
+                "rssi": "-59dBm",
+                "mac": "c8848c7cf362"
+            }
+        ],
+        "hex_format_payload": "4117e10007e8081d0a1e22001540d63cae10b5eac8848c7cf360c5c8848c7cf362c5",
+        "timezone": "UTC+00:00",
+        "battery_level": "Normal",
+        "time": "2024-08-29 10:30:36",
+        "mandown_status": "Not in idle",
+        "ack": 1,
+        "position_success_type": "WIFI positioning success",
+        "time_str": "2024-8-29 10:30:34  TZ:0",
+        "positioning_type": "Downlink for position",
+        "position_success_type_code": 0,
+        "battery_voltage": "3.6V",
+        "operation_mode": "Periodic mode"
+    },
+    "rxInfo": [
+        {
+            "gatewayId": "2629e54a950bd50a",
+            "uplinkId": 64875,
+            "time": "2024-08-29T10:30:35.566+00:00",
+            "rssi": -130,
+            "snr": -14,
+            "context": "DsQRSQ==",
+            "metadata": {
+                "regi": "EU868",
+                "gateway_h3index": "8c19582183863ff",
+                "region_config_id": "EU868",
+                "network": "helium_iot",
+                "region_common_name": "EU868",
+                "gateway_long": "-2.377447130800781",
+                "gateway_name": "harsh-pebble-raccoon",
+                "gateway_id": "112N4qQXff37eXypA1WcSBQxfxhSeFEuFf9qM8XvAZMR12zXz1Sm",
+                "gateway_lat": "51.285427854353429"
+            },
+            "crcStatus": "CRC_OK"
+        },
+        {
+            "gatewayId": "221b99ccc0e6c94c",
+            "uplinkId": 19486,
+            "time": "2024-08-29T10:30:35.554+00:00",
+            "rssi": -122,
+            "snr": -4.8,
+            "context": "AjATng==",
+            "metadata": {
+                "region_config_id": "EU868",
+                "gateway_lat": "51.243195527438964",
+                "region_common_name": "EU868",
+                "gateway_h3index": "8c19582e58199ff",
+                "network": "helium_iot",
+                "gateway_name": "sneaky-syrup-puma",
+                "gateway_long": "-2.306273361749551",
+                "regi": "EU868",
+                "gateway_id": "112QV1nB3d35C4KjzmbYuUhMcZWnQ5woWH97i7rMjWp7knKzHJxG"
+            },
+            "crcStatus": "CRC_OK"
+        },
+        {
+            "gatewayId": "155eda429bebb420",
+            "uplinkId": 40910,
+            "time": "2024-08-29T10:30:35.565+00:00",
+            "rssi": -124,
+            "snr": -10.8,
+            "context": "Kx8elA==",
+            "metadata": {
+                "region_config_id": "EU868",
+                "gateway_name": "delightful-stone-pike",
+                "gateway_id": "11JrAbQ74na9iUZ6RQHjHvqB6uY5DE7KsPHtKgsufLJs4b4LbKY",
+                "gateway_lat": "51.287542089437189",
+                "region_common_name": "EU868",
+                "gateway_h3index": "8c19582180d3bff",
+                "regi": "EU868",
+                "gateway_long": "-2.381948919750106",
+                "network": "helium_iot"
+            },
+            "crcStatus": "CRC_OK"
+        }
+    ],
+    "txInfo": {
+        "frequency": 867100000,
+        "modulation": {
+            "lora": {
+                "bandwidth": 125000,
+                "spreadingFactor": 10,
+                "codeRate": "CR_4_5"
+            }
+        }
+    }
+}

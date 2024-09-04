@@ -1,0 +1,75 @@
+{
+    "deduplicationId": "1f2a7afc-b775-4cd5-8963-4fdc2188e321",
+    "time": "2024-08-29T11:06:03.765+00:00",
+    "deviceInfo": {
+        "tenantId": "fff36549-75a5-40f7-a847-98807d88794d",
+        "tenantName": "Living Map",
+        "applicationId": "ae8e2900-2051-4f63-adae-a3ec362a3a6c",
+        "applicationName": "Living Map Equipment Testing",
+        "deviceProfileId": "e6e471e2-14e5-4c0a-91fa-e0f798d3c28b",
+        "deviceProfileName": "Mokosmart LW001-BG-PRO",
+        "deviceName": "GPS Tracker 004",
+        "devEui": "f48af7ffffea79d8",
+        "deviceClassEnabled": "CLASS_A",
+        "tags": {}
+    },
+    "devAddr": "fe00a062",
+    "adr": true,
+    "dr": 3,
+    "fCnt": 12,
+    "fPort": 1,
+    "confirmed": false,
+    "data": "ARfjA0cAAAAA",
+    "object": {
+        "port": 1,
+        "tamper_alarm": "Not triggered",
+        "battery_level": "Normal",
+        "operation_mode": "Periodic mode",
+        "activity_count": 0,
+        "timestamp": 1724929564,
+        "battery_voltage": "3.6V",
+        "tamper_alarm_code": 0,
+        "motion_state_since_last_paylaod": "No",
+        "reboot_reason": "Power on after normal power off",
+        "firmware_version": "V1.0.7",
+        "payload_type": "Heartbeat",
+        "timezone": "UTC+00:00",
+        "time": "2024-08-29 11:06:04",
+        "temperature": "23°C",
+        "mandown_status": "Not in idle",
+        "hex_format_payload": "0117e3034700000000",
+        "ack": 3
+    },
+    "rxInfo": [
+        {
+            "gatewayId": "221b99ccc0e6c94c",
+            "uplinkId": 65033,
+            "time": "2024-08-29T11:06:03.765+00:00",
+            "rssi": -116,
+            "snr": 1,
+            "context": "gQoQpg==",
+            "metadata": {
+                "gateway_long": "-2.306273361749551",
+                "region_common_name": "EU868",
+                "region_config_id": "EU868",
+                "gateway_lat": "51.243195527438964",
+                "gateway_h3index": "8c19582e58199ff",
+                "network": "helium_iot",
+                "regi": "EU868",
+                "gateway_id": "112QV1nB3d35C4KjzmbYuUhMcZWnQ5woWH97i7rMjWp7knKzHJxG",
+                "gateway_name": "sneaky-syrup-puma"
+            },
+            "crcStatus": "CRC_OK"
+        }
+    ],
+    "txInfo": {
+        "frequency": 867900000,
+        "modulation": {
+            "lora": {
+                "bandwidth": 125000,
+                "spreadingFactor": 9,
+                "codeRate": "CR_4_5"
+            }
+        }
+    }
+}

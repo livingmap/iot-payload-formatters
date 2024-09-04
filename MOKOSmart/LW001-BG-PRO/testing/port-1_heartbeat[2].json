@@ -1,0 +1,115 @@
+{
+    "deduplicationId": "b1471a4b-c6cb-446c-8631-4398f696644b",
+    "time": "2024-08-29T11:01:04.202+00:00",
+    "deviceInfo": {
+        "tenantId": "fff36549-75a5-40f7-a847-98807d88794d",
+        "tenantName": "Living Map",
+        "applicationId": "ae8e2900-2051-4f63-adae-a3ec362a3a6c",
+        "applicationName": "Living Map Equipment Testing",
+        "deviceProfileId": "e6e471e2-14e5-4c0a-91fa-e0f798d3c28b",
+        "deviceProfileName": "Mokosmart LW001-BG-PRO",
+        "deviceName": "GPS Tracker 004",
+        "devEui": "f48af7ffffea79d8",
+        "deviceClassEnabled": "CLASS_A",
+        "tags": {}
+    },
+    "devAddr": "fe00a062",
+    "adr": true,
+    "dr": 2,
+    "fCnt": 11,
+    "fPort": 1,
+    "confirmed": false,
+    "data": "IRfiA0cAAAAH",
+    "object": {
+        "timestamp": 1724929264,
+        "hex_format_payload": "2117e2034700000007",
+        "motion_state_since_last_paylaod": "Yes",
+        "battery_voltage": "3.6V",
+        "temperature": "23°C",
+        "activity_count": 7,
+        "ack": 2,
+        "tamper_alarm_code": 0,
+        "battery_level": "Normal",
+        "operation_mode": "Periodic mode",
+        "firmware_version": "V1.0.7",
+        "payload_type": "Heartbeat",
+        "mandown_status": "Not in idle",
+        "timezone": "UTC+00:00",
+        "tamper_alarm": "Not triggered",
+        "time": "2024-08-29 11:01:04",
+        "port": 1,
+        "reboot_reason": "Power on after normal power off"
+    },
+    "rxInfo": [
+        {
+            "gatewayId": "155eda429bebb420",
+            "uplinkId": 60655,
+            "time": "2024-08-29T11:01:04.202+00:00",
+            "rssi": -125,
+            "snr": -12.8,
+            "context": "mB2ofA==",
+            "metadata": {
+                "gateway_long": "-2.381948919750106",
+                "region_common_name": "EU868",
+                "gateway_id": "11JrAbQ74na9iUZ6RQHjHvqB6uY5DE7KsPHtKgsufLJs4b4LbKY",
+                "gateway_lat": "51.287542089437189",
+                "regi": "EU868",
+                "network": "helium_iot",
+                "gateway_h3index": "8c19582180d3bff",
+                "gateway_name": "delightful-stone-pike",
+                "region_config_id": "EU868"
+            },
+            "crcStatus": "CRC_OK"
+        },
+        {
+            "gatewayId": "221b99ccc0e6c94c",
+            "uplinkId": 18319,
+            "time": "2024-08-29T11:01:04.195+00:00",
+            "rssi": -116,
+            "snr": -1.2,
+            "context": "by79YQ==",
+            "metadata": {
+                "gateway_name": "sneaky-syrup-puma",
+                "network": "helium_iot",
+                "gateway_lat": "51.243195527438964",
+                "region_common_name": "EU868",
+                "gateway_h3index": "8c19582e58199ff",
+                "gateway_id": "112QV1nB3d35C4KjzmbYuUhMcZWnQ5woWH97i7rMjWp7knKzHJxG",
+                "region_config_id": "EU868",
+                "gateway_long": "-2.306273361749551",
+                "regi": "EU868"
+            },
+            "crcStatus": "CRC_OK"
+        },
+        {
+            "gatewayId": "2629e54a950bd50a",
+            "uplinkId": 52498,
+            "time": "2024-08-29T11:01:04.202+00:00",
+            "rssi": -129,
+            "snr": -14.8,
+            "context": "e8L7qQ==",
+            "metadata": {
+                "gateway_id": "112N4qQXff37eXypA1WcSBQxfxhSeFEuFf9qM8XvAZMR12zXz1Sm",
+                "gateway_lat": "51.285427854353429",
+                "gateway_long": "-2.377447130800781",
+                "region_config_id": "EU868",
+                "regi": "EU868",
+                "network": "helium_iot",
+                "gateway_h3index": "8c19582183863ff",
+                "gateway_name": "harsh-pebble-raccoon",
+                "region_common_name": "EU868"
+            },
+            "crcStatus": "CRC_OK"
+        }
+    ],
+    "txInfo": {
+        "frequency": 868500000,
+        "modulation": {
+            "lora": {
+                "bandwidth": 125000,
+                "spreadingFactor": 10,
+                "codeRate": "CR_4_5"
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "deduplicationId": "63e5881b-e51e-4f2f-a65a-89915b2b2e60",
+    "time": "2024-08-29T12:38:27.380+00:00",
+    "deviceInfo": {
+        "tenantId": "fff36549-75a5-40f7-a847-98807d88794d",
+        "tenantName": "Living Map",
+        "applicationId": "ae8e2900-2051-4f63-adae-a3ec362a3a6c",
+        "applicationName": "Living Map Equipment Testing",
+        "deviceProfileId": "e6e471e2-14e5-4c0a-91fa-e0f798d3c28b",
+        "deviceProfileName": "Mokosmart LW001-BG-PRO",
+        "deviceName": "GPS Tracker 004",
+        "devEui": "f48af7ffffea79d8",
+        "deviceClassEnabled": "CLASS_A",
+        "tags": {}
+    },
+    "devAddr": "fe00a062",
+    "adr": true,
+    "dr": 5,
+    "fCnt": 38,
+    "fPort": 8,
+    "confirmed": false,
+    "data": "IxT1Ag==",
+    "object": {
+        "payload_type": "Event Message",
+        "timezone": "UTC+00:00",
+        "motion_state_since_last_paylaod": "Yes",
+        "hex_format_payload": "2314f502",
+        "event_type": "End of movement",
+        "timestamp": 1724935107,
+        "time": "2024-08-29 12:38:27",
+        "battery_voltage": "3.7V",
+        "tamper_alarm_code": 0,
+        "temperature": "20°C",
+        "port": 8,
+        "battery_level": "Normal",
+        "tamper_alarm": "Not triggered",
+        "operation_mode": "Motion mode",
+        "ack": 5,
+        "mandown_status": "Not in idle"
+    },
+    "rxInfo": [
+        {
+            "gatewayId": "221b99ccc0e6c94c",
+            "uplinkId": 33735,
+            "time": "2024-08-29T12:38:27.380+00:00",
+            "rssi": -117,
+            "snr": 0.2,
+            "context": "y3bpOw==",
+            "metadata": {
+                "region_common_name": "EU868",
+                "gateway_long": "-2.306273361749551",
+                "gateway_lat": "51.243195527438964",
+                "gateway_name": "sneaky-syrup-puma",
+                "regi": "EU868",
+                "region_config_id": "EU868",
+                "gateway_h3index": "8c19582e58199ff",
+                "gateway_id": "112QV1nB3d35C4KjzmbYuUhMcZWnQ5woWH97i7rMjWp7knKzHJxG",
+                "network": "helium_iot"
+            },
+            "crcStatus": "CRC_OK"
+        }
+    ],
+    "txInfo": {
+        "frequency": 867300000,
+        "modulation": {
+            "lora": {
+                "bandwidth": 125000,
+                "spreadingFactor": 7,
+                "codeRate": "CR_4_5"
+            }
+        }
+    }
+}

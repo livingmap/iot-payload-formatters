@@ -1,0 +1,73 @@
+{
+    "deduplicationId": "b4f763c2-e292-4465-b094-4d92ca26dc91",
+    "time": "2024-08-29T12:12:59.490+00:00",
+    "deviceInfo": {
+        "tenantId": "fff36549-75a5-40f7-a847-98807d88794d",
+        "tenantName": "Living Map",
+        "applicationId": "ae8e2900-2051-4f63-adae-a3ec362a3a6c",
+        "applicationName": "Living Map Equipment Testing",
+        "deviceProfileId": "e6e471e2-14e5-4c0a-91fa-e0f798d3c28b",
+        "deviceProfileName": "Mokosmart LW001-BG-PRO",
+        "deviceName": "GPS Tracker 004",
+        "devEui": "f48af7ffffea79d8",
+        "deviceClassEnabled": "CLASS_A",
+        "tags": {}
+    },
+    "devAddr": "fe00a062",
+    "adr": true,
+    "dr": 5,
+    "fCnt": 30,
+    "fPort": 6,
+    "confirmed": false,
+    "data": "ExT1AAE=",
+    "object": {
+        "motion_state_since_last_paylaod": "No",
+        "tamper_alarm": "Not triggered",
+        "hex_format_payload": "1314f50001",
+        "port": 6,
+        "battery_voltage": "3.7V",
+        "mandown_status": "In idle",
+        "timezone": "UTC+00:00",
+        "battery_level": "Normal",
+        "tamper_alarm_code": 0,
+        "operation_mode": "Motion mode",
+        "time": "2024-08-29 12:12:59",
+        "payload_type": "Man Down detection",
+        "total_idle_time": 1,
+        "ack": 5,
+        "timestamp": 1724933579,
+        "temperature": "20°C"
+    },
+    "rxInfo": [
+        {
+            "gatewayId": "221b99ccc0e6c94c",
+            "uplinkId": 21046,
+            "time": "2024-08-29T12:12:59.490+00:00",
+            "rssi": -113,
+            "snr": 3.5,
+            "context": "cGUiyA==",
+            "metadata": {
+                "gateway_long": "-2.306273361749551",
+                "gateway_id": "112QV1nB3d35C4KjzmbYuUhMcZWnQ5woWH97i7rMjWp7knKzHJxG",
+                "region_common_name": "EU868",
+                "gateway_h3index": "8c19582e58199ff",
+                "gateway_name": "sneaky-syrup-puma",
+                "gateway_lat": "51.243195527438964",
+                "network": "helium_iot",
+                "region_config_id": "EU868",
+                "regi": "EU868"
+            },
+            "crcStatus": "CRC_OK"
+        }
+    ],
+    "txInfo": {
+        "frequency": 867300000,
+        "modulation": {
+            "lora": {
+                "bandwidth": 125000,
+                "spreadingFactor": 7,
+                "codeRate": "CR_4_5"
+            }
+        }
+    }
+}

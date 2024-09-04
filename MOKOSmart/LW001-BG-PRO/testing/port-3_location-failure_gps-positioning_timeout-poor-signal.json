@@ -1,0 +1,96 @@
+{
+    "deduplicationId": "c60687f4-d0d0-48e2-bab9-24778266469c",
+    "time": "2024-08-29T10:18:26.553+00:00",
+    "deviceInfo": {
+        "tenantId": "fff36549-75a5-40f7-a847-98807d88794d",
+        "tenantName": "Living Map",
+        "applicationId": "ae8e2900-2051-4f63-adae-a3ec362a3a6c",
+        "applicationName": "Living Map Equipment Testing",
+        "deviceProfileId": "e6e471e2-14e5-4c0a-91fa-e0f798d3c28b",
+        "deviceProfileName": "Mokosmart LW001-BG-PRO",
+        "deviceName": "GPS Tracker 004",
+        "devEui": "f48af7ffffea79d8",
+        "deviceClassEnabled": "CLASS_A",
+        "tags": {}
+    },
+    "devAddr": "fe00a062",
+    "adr": true,
+    "dr": 1,
+    "fCnt": 6,
+    "fPort": 3,
+    "confirmed": false,
+    "data": "IRTgCwX/Hh0cDw==",
+    "object": {
+        "ack": 0,
+        "port": 3,
+        "time": "2024-08-29 10:18:26",
+        "positioning_type": "Normal",
+        "motion_state_since_last_paylaod": "Yes",
+        "tamper_alarm_code": 0,
+        "mandown_status": "Not in idle",
+        "payload_type": "Location Failure",
+        "gps_satellite_cn": "30-29-28-15",
+        "battery_voltage": "3.6V",
+        "pdop": "unknow",
+        "timestamp": 1724926706,
+        "battery_level": "Normal",
+        "reasons_for_positioning_failure": "GPS cold start positioning timeout (The gps signal current environment isn’t very good, please leave the device in a more open area)",
+        "operation_mode": "Periodic mode",
+        "tamper_alarm": "Not triggered",
+        "temperature": "20°C",
+        "timezone": "UTC+00:00",
+        "hex_format_payload": "2114e00b05ff1e1d1c0f"
+    },
+    "rxInfo": [
+        {
+            "gatewayId": "221b99ccc0e6c94c",
+            "uplinkId": 57083,
+            "time": "2024-08-29T10:18:26.553+00:00",
+            "rssi": -119,
+            "snr": -3,
+            "context": "1ryNHA==",
+            "metadata": {
+                "gateway_lat": "51.243195527438964",
+                "region_common_name": "EU868",
+                "gateway_long": "-2.306273361749551",
+                "gateway_name": "sneaky-syrup-puma",
+                "gateway_h3index": "8c19582e58199ff",
+                "network": "helium_iot",
+                "gateway_id": "112QV1nB3d35C4KjzmbYuUhMcZWnQ5woWH97i7rMjWp7knKzHJxG",
+                "region_config_id": "EU868",
+                "regi": "EU868"
+            },
+            "crcStatus": "CRC_OK"
+        },
+        {
+            "gatewayId": "2629e54a950bd50a",
+            "uplinkId": 18396,
+            "time": "2024-08-29T10:18:26.570+00:00",
+            "rssi": -132,
+            "snr": -17.2,
+            "context": "41CKhw==",
+            "metadata": {
+                "gateway_name": "harsh-pebble-raccoon",
+                "regi": "EU868",
+                "network": "helium_iot",
+                "region_common_name": "EU868",
+                "gateway_id": "112N4qQXff37eXypA1WcSBQxfxhSeFEuFf9qM8XvAZMR12zXz1Sm",
+                "gateway_h3index": "8c19582183863ff",
+                "region_config_id": "EU868",
+                "gateway_lat": "51.285427854353429",
+                "gateway_long": "-2.377447130800781"
+            },
+            "crcStatus": "CRC_OK"
+        }
+    ],
+    "txInfo": {
+        "frequency": 867500000,
+        "modulation": {
+            "lora": {
+                "bandwidth": 125000,
+                "spreadingFactor": 11,
+                "codeRate": "CR_4_5"
+            }
+        }
+    }
+}

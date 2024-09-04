@@ -1,0 +1,76 @@
+{
+    "deduplicationId": "b9f0990d-6b80-41b4-97cc-2a33da1746b6",
+    "time": "2024-08-20T17:43:15.568+00:00",
+    "deviceInfo": {
+        "tenantId": "fff36549-75a5-40f7-a847-98807d88794d",
+        "tenantName": "Living Map",
+        "applicationId": "ae8e2900-2051-4f63-adae-a3ec362a3a6c",
+        "applicationName": "Living Map Equipment Testing",
+        "deviceProfileId": "e6e471e2-14e5-4c0a-91fa-e0f798d3c28b",
+        "deviceProfileName": "Mokosmart LW001-BG-PRO",
+        "deviceName": "GPS Tracker 001",
+        "devEui": "ebcfe3ffffc6664f",
+        "deviceClassEnabled": "CLASS_A",
+        "tags": {}
+    },
+    "devAddr": "fe00a069",
+    "adr": true,
+    "dr": 3,
+    "fCnt": 3219,
+    "fPort": 3,
+    "confirmed": false,
+    "data": "IRzRCQX/HBsZEg==",
+    "object": {
+        "tamper_alarm_code": 0,
+        "positioning_type": "Normal",
+        "port": 3,
+        "motion_state_since_last_paylaod": "Yes",
+        "pdop": "unknow",
+        "operation_mode": "Periodic mode",
+        "hex_format_payload": "211cd10905ff1c1b1912",
+        "timestamp": 1724175796,
+        "timezone": "UTC+00:00",
+        "temperature": "28°C",
+        "time": "2024-08-20 17:43:16",
+        "battery_level": "Normal",
+        "battery_voltage": "3.5V",
+        "ack": 1,
+        "gps_satellite_cn": "28-27-25-18",
+        "mandown_status": "Not in idle",
+        "payload_type": "Location Failure",
+        "tamper_alarm": "Not triggered",
+        "reasons_for_positioning_failure": "GPS positioning time is not enough (The location payload reporting interval is set too short, please increase the report interval of the current working mode via MKLoRa app)"
+    },
+    "rxInfo": [
+        {
+            "gatewayId": "221b99ccc0e6c94c",
+            "uplinkId": 21167,
+            "time": "2024-08-20T17:43:15.568+00:00",
+            "rssi": -124,
+            "snr": -8.8,
+            "context": "APPoaw==",
+            "metadata": {
+                "gateway_name": "sneaky-syrup-puma",
+                "gateway_long": "-2.306273361749551",
+                "regi": "EU868",
+                "gateway_id": "112QV1nB3d35C4KjzmbYuUhMcZWnQ5woWH97i7rMjWp7knKzHJxG",
+                "network": "helium_iot",
+                "gateway_h3index": "8c19582e58199ff",
+                "region_config_id": "EU868",
+                "gateway_lat": "51.243195527438964",
+                "region_common_name": "EU868"
+            },
+            "crcStatus": "CRC_OK"
+        }
+    ],
+    "txInfo": {
+        "frequency": 868300000,
+        "modulation": {
+            "lora": {
+                "bandwidth": 125000,
+                "spreadingFactor": 9,
+                "codeRate": "CR_4_5"
+            }
+        }
+    }
+}

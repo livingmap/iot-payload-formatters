@@ -1,0 +1,73 @@
+{
+    "deduplicationId": "6796d9eb-21e7-4878-97a1-8bf46370f8b2",
+    "time": "2024-08-29T13:36:27.160+00:00",
+    "deviceInfo": {
+        "tenantId": "fff36549-75a5-40f7-a847-98807d88794d",
+        "tenantName": "Living Map",
+        "applicationId": "ae8e2900-2051-4f63-adae-a3ec362a3a6c",
+        "applicationName": "Living Map Equipment Testing",
+        "deviceProfileId": "e6e471e2-14e5-4c0a-91fa-e0f798d3c28b",
+        "deviceProfileName": "Mokosmart LW001-BG-PRO",
+        "deviceName": "GPS Tracker 004",
+        "devEui": "f48af7ffffea79d8",
+        "deviceClassEnabled": "CLASS_A",
+        "tags": {}
+    },
+    "devAddr": "fe00a062",
+    "adr": true,
+    "dr": 5,
+    "fCnt": 55,
+    "fPort": 6,
+    "confirmed": false,
+    "data": "Exb5AAE=",
+    "object": {
+        "timezone": "UTC+00:00",
+        "tamper_alarm": "Not triggered",
+        "timestamp": 1724938587,
+        "hex_format_payload": "1316f90001",
+        "total_idle_time": 1,
+        "operation_mode": "Motion mode",
+        "payload_type": "Man Down detection",
+        "battery_voltage": "3.7V",
+        "motion_state_since_last_paylaod": "No",
+        "time": "2024-08-29 13:36:27",
+        "temperature": "22°C",
+        "mandown_status": "In idle",
+        "port": 6,
+        "tamper_alarm_code": 0,
+        "ack": 9,
+        "battery_level": "Normal"
+    },
+    "rxInfo": [
+        {
+            "gatewayId": "221b99ccc0e6c94c",
+            "uplinkId": 10892,
+            "time": "2024-08-29T13:36:27.160+00:00",
+            "rssi": -115,
+            "snr": -0.5,
+            "context": "muAjfg==",
+            "metadata": {
+                "network": "helium_iot",
+                "gateway_id": "112QV1nB3d35C4KjzmbYuUhMcZWnQ5woWH97i7rMjWp7knKzHJxG",
+                "gateway_h3index": "8c19582e58199ff",
+                "regi": "EU868",
+                "gateway_long": "-2.306273361749551",
+                "region_common_name": "EU868",
+                "gateway_lat": "51.243195527438964",
+                "region_config_id": "EU868",
+                "gateway_name": "sneaky-syrup-puma"
+            },
+            "crcStatus": "CRC_OK"
+        }
+    ],
+    "txInfo": {
+        "frequency": 868500000,
+        "modulation": {
+            "lora": {
+                "bandwidth": 125000,
+                "spreadingFactor": 7,
+                "codeRate": "CR_4_5"
+            }
+        }
+    }
+}

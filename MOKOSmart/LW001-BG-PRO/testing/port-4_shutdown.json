@@ -1,0 +1,73 @@
+{
+    "deduplicationId": "decbc2fb-0a94-4b72-ae35-66499f28fcf7",
+    "time": "2024-08-29T13:44:25.345+00:00",
+    "deviceInfo": {
+        "tenantId": "fff36549-75a5-40f7-a847-98807d88794d",
+        "tenantName": "Living Map",
+        "applicationId": "ae8e2900-2051-4f63-adae-a3ec362a3a6c",
+        "applicationName": "Living Map Equipment Testing",
+        "deviceProfileId": "e6e471e2-14e5-4c0a-91fa-e0f798d3c28b",
+        "deviceProfileName": "Mokosmart LW001-BG-PRO",
+        "deviceName": "GPS Tracker 004",
+        "devEui": "f48af7ffffea79d8",
+        "deviceClassEnabled": "CLASS_A",
+        "tags": {}
+    },
+    "devAddr": "fe00a062",
+    "adr": true,
+    "dr": 5,
+    "fCnt": 58,
+    "fPort": 4,
+    "confirmed": false,
+    "data": "IxX5Ag==",
+    "object": {
+        "port": 4,
+        "motion_state_since_last_paylaod": "Yes",
+        "tamper_alarm_code": 0,
+        "operation_mode": "Motion mode",
+        "timezone": "UTC+00:00",
+        "battery_voltage": "3.7V",
+        "time": "2024-08-29 13:44:25",
+        "tamper_alarm": "Not triggered",
+        "temperature": "21°C",
+        "mandown_status": "Not in idle",
+        "battery_level": "Normal",
+        "hex_format_payload": "2315f902",
+        "timestamp": 1724939065,
+        "ack": 9,
+        "shutdown_type": "Magnetic to turn off the device",
+        "payload_type": "Shutdown"
+    },
+    "rxInfo": [
+        {
+            "gatewayId": "221b99ccc0e6c94c",
+            "uplinkId": 16648,
+            "time": "2024-08-29T13:44:25.345+00:00",
+            "rssi": -119,
+            "snr": -1.8,
+            "context": "t2DKog==",
+            "metadata": {
+                "gateway_h3index": "8c19582e58199ff",
+                "gateway_name": "sneaky-syrup-puma",
+                "network": "helium_iot",
+                "region_config_id": "EU868",
+                "gateway_lat": "51.243195527438964",
+                "regi": "EU868",
+                "gateway_id": "112QV1nB3d35C4KjzmbYuUhMcZWnQ5woWH97i7rMjWp7knKzHJxG",
+                "gateway_long": "-2.306273361749551",
+                "region_common_name": "EU868"
+            },
+            "crcStatus": "CRC_OK"
+        }
+    ],
+    "txInfo": {
+        "frequency": 867700000,
+        "modulation": {
+            "lora": {
+                "bandwidth": 125000,
+                "spreadingFactor": 7,
+                "codeRate": "CR_4_5"
+            }
+        }
+    }
+}

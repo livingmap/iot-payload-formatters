@@ -1,0 +1,99 @@
+{
+    "deduplicationId": "2fa78069-d5aa-4f46-a773-11552784ecba",
+    "time": "2024-08-29T11:06:25.672+00:00",
+    "deviceInfo": {
+        "tenantId": "fff36549-75a5-40f7-a847-98807d88794d",
+        "tenantName": "Living Map",
+        "applicationId": "ae8e2900-2051-4f63-adae-a3ec362a3a6c",
+        "applicationName": "Living Map Equipment Testing",
+        "deviceProfileId": "e6e471e2-14e5-4c0a-91fa-e0f798d3c28b",
+        "deviceProfileName": "Mokosmart LW001-BG-PRO",
+        "deviceName": "GPS Tracker 004",
+        "devEui": "f48af7ffffea79d8",
+        "deviceClassEnabled": "CLASS_A",
+        "tags": {}
+    },
+    "devAddr": "fe00a062",
+    "adr": true,
+    "dr": 4,
+    "fCnt": 13,
+    "fPort": 2,
+    "confirmed": false,
+    "data": "ARfkAgfoCB0LBAAACR6IyAf+nW9RGQ==",
+    "object": {
+        "timestamp": 1724929586,
+        "position_success_type_code": 2,
+        "latitude": 51.2280583,
+        "ack": 4,
+        "longitude": -2.3236783,
+        "tamper_alarm_code": 0,
+        "battery_voltage": "3.6V",
+        "tamper_alarm": "Not triggered",
+        "position_success_type": "GPS positioning success",
+        "pdop": 2.5,
+        "time_str": "2024-8-29 11:4:0  TZ:0",
+        "hex_format_payload": "0117e40207e8081d0b040000091e88c807fe9d6f5119",
+        "time": "2024-08-29 11:06:26",
+        "mandown_status": "Not in idle",
+        "port": 2,
+        "temperature": "23°C",
+        "payload_type": "Location Fixed",
+        "timezone": "UTC+00:00",
+        "battery_level": "Normal",
+        "motion_state_since_last_paylaod": "No",
+        "operation_mode": "Periodic mode",
+        "positioning_type": "Normal"
+    },
+    "rxInfo": [
+        {
+            "gatewayId": "155eda429bebb420",
+            "uplinkId": 28577,
+            "time": "2024-08-29T11:06:25.672+00:00",
+            "rssi": -128,
+            "snr": -9.2,
+            "context": "q0bc5A==",
+            "metadata": {
+                "network": "helium_iot",
+                "region_config_id": "EU868",
+                "gateway_name": "delightful-stone-pike",
+                "gateway_long": "-2.381948919750106",
+                "gateway_lat": "51.287542089437189",
+                "region_common_name": "EU868",
+                "regi": "EU868",
+                "gateway_h3index": "8c19582180d3bff",
+                "gateway_id": "11JrAbQ74na9iUZ6RQHjHvqB6uY5DE7KsPHtKgsufLJs4b4LbKY"
+            },
+            "crcStatus": "CRC_OK"
+        },
+        {
+            "gatewayId": "221b99ccc0e6c94c",
+            "uplinkId": 7133,
+            "time": "2024-08-29T11:06:25.662+00:00",
+            "rssi": -113,
+            "snr": 4,
+            "context": "glhCuw==",
+            "metadata": {
+                "gateway_h3index": "8c19582e58199ff",
+                "network": "helium_iot",
+                "region_common_name": "EU868",
+                "region_config_id": "EU868",
+                "gateway_name": "sneaky-syrup-puma",
+                "gateway_long": "-2.306273361749551",
+                "regi": "EU868",
+                "gateway_lat": "51.243195527438964",
+                "gateway_id": "112QV1nB3d35C4KjzmbYuUhMcZWnQ5woWH97i7rMjWp7knKzHJxG"
+            },
+            "crcStatus": "CRC_OK"
+        }
+    ],
+    "txInfo": {
+        "frequency": 867900000,
+        "modulation": {
+            "lora": {
+                "bandwidth": 125000,
+                "spreadingFactor": 8,
+                "codeRate": "CR_4_5"
+            }
+        }
+    }
+}
