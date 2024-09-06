@@ -1,0 +1,60 @@
+{
+    "deduplicationId": "fbc79f7b-5907-4712-afe4-1fb845bb2760",
+    "time": "2024-09-04T21:18:33.270+00:00",
+    "deviceInfo": {
+        "tenantId": "fff36549-75a5-40f7-a847-98807d88794d",
+        "tenantName": "Living Map",
+        "applicationId": "ae8e2900-2051-4f63-adae-a3ec362a3a6c",
+        "applicationName": "Living Map Equipment Testing",
+        "deviceProfileId": "544681b3-2f57-448b-9a8b-a5bf38fcf204",
+        "deviceProfileName": "Mokosmart LW001-BG-PRO - alt",
+        "deviceName": "GPS Tracker 004",
+        "devEui": "f48af7ffffea79d8",
+        "deviceClassEnabled": "CLASS_A",
+        "tags": {}
+    },
+    "devAddr": "fe00a000",
+    "adr": true,
+    "dr": 5,
+    "fCnt": 149,
+    "fPort": 0,
+    "confirmed": false,
+    "data": "",
+    "object": {
+        "device": {},
+        "sensors": {},
+        "payload": {}
+    },
+    "rxInfo": [
+        {
+            "gatewayId": "221b99ccc0e6c94c",
+            "uplinkId": 9860,
+            "time": "2024-09-04T21:18:33.270+00:00",
+            "rssi": -119,
+            "snr": -3.5,
+            "context": "wod93w==",
+            "metadata": {
+                "gateway_h3index": "8c19582e58199ff",
+                "gateway_name": "sneaky-syrup-puma",
+                "gateway_id": "112QV1nB3d35C4KjzmbYuUhMcZWnQ5woWH97i7rMjWp7knKzHJxG",
+                "gateway_long": "-2.306273361749551",
+                "network": "helium_iot",
+                "region_common_name": "EU868",
+                "regi": "EU868",
+                "region_config_id": "EU868",
+                "gateway_lat": "51.243195527438964"
+            },
+            "crcStatus": "CRC_OK"
+        }
+    ],
+    "txInfo": {
+        "frequency": 868300000,
+        "modulation": {
+            "lora": {
+                "bandwidth": 125000,
+                "spreadingFactor": 7,
+                "codeRate": "CR_4_5"
+            }
+        }
+    }
+}

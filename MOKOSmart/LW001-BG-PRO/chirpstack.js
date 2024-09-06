@@ -1,107 +1,117 @@
 let PayloadFormatter = {
 
-    messaging: {
-
+    CONSTANTS: {
         manufacturer: "MOKOsmart",
+
         model: "LW001-BG PRO",
 
+        ports: {
+            heartbeat: 1,
+            locationFixed: 2,
+            locationFailure: 3,
+            shutdown: 4 // TODO expand this to other sensors
+        }
+    },
+
+    messaging: {
+
         payloadType: [ // index+1 relate to port numbers, hence the unused 9/10 indexed (port 10/11)
-            "01~ Heartbeat",             // Port 1
-            "02~ Location Fixed",        // Port 2
-            "03~ Location Failure",      // Port 3
-            "04~ Shutdown",              // Port 4
-            "05~ Shock Detection",       // Port 5
-            "06~ Man Down Detection",    // Port 6
-            "07~ Tamper Detection",      // Port 7
-            "08~ Action Event",        // Port 8
-            "09~ Battery Consumption",   // Port 9
-            "10~", // unused             // Port 10
-            "11~", // unused             // Port 11
-            "12~ GPS Limit"              // Port 12
+            "{HB} Heartbeat",             // Port 1
+            "{LX} Location Fixed",        // Port 2
+            "{LF} Location Failure",      // Port 3
+            "{SD} Shutdown",              // Port 4
+            "{SH} Shock Detection",       // Port 5
+            "{MD} Man Down Detection",    // Port 6
+            "{TD} Tamper Detection",      // Port 7
+            "{AE} Action Event",          // Port 8
+            "{BC} Battery Consumption",   // Port 9
+            "{U1} Unused",                // Port 10
+            "{U2} Unused",                // Port 11
+            "{GL} GPS Limit"              // Port 12
         ],
 
         operationMode: [
-            "1~ Standby Mode",
-            "2~ Periodic Mode",
-            "3~ Timing Mode",
-            "4~ Motion Mode"
+            "{SM} Standby Mode",
+            "{PM} Periodic Mode",
+            "{TM} Timing Mode",
+            "{MM} Motion Mode"
         ],
 
         rebootReason: [
-            "0~ Power Failure",
-            "1~ Bluetooth Request",
-            "2~ LoRaWAN Request",
-            "3~ Normal Power On"
+            "{PF} Power Failure",
+            "{BR} Bluetooth Request",
+            "{LR} LoRaWAN Request",
+            "{NP} Normal Power On"
         ],
 
         positioningRequestType: [
-            "0~ By Operating Mode",
-            "1~ Downlink For Position Command"
+            "{OM} By Operating Mode",
+            "{DL} Downlink For Position Command"
         ],
 
         positioningMethod: [
-            "0~ Wi-Fi Positioning",
-            "1~ Bluetooth Positioning",
-            "2~ GPS Positioning"
+            "{WF} Wi-Fi Positioning",
+            "{BT} Bluetooth Positioning",
+            "{GN} GPS Positioning"
         ],
 
         positioningFailedReason: [
-            "10~ Wi-Fi Positioning Report Interval Too Short",
-            "11~ Wi-Fi Positioning Timeout",
-            "12~ Wi-Fi Positioning Module Fault",
+            "{WF1} Wi-Fi Positioning Report Interval Too Short",
+            "{WF2} Wi-Fi Positioning Timeout",
+            "{WF3} Wi-Fi Positioning Module Fault",
 
-            "20~ Bluetooth Positioning Report Interval Too Short",
-            "21~ Bluetooth Positioning Timeout",
-            "22~ Bluetooth Broadcasting in Progress",
+            "{BT1} Bluetooth Positioning Report Interval Too Short",
+            "{BT2} Bluetooth Positioning Timeout",
+            "{BT3} Bluetooth Broadcasting in Progress",
 
-            "30~ GPS Position Time Budget Exceeded",
-            "31~ GPS Positioning Timeout (Coarse)",
-            "32~ GPS Positioning Timeout (Fine)",
-            "33~ GPS Positioning Report Interval Too Short",
-            "34~ GPS Positioning Aiding Timeout",
-            "35~ GPS Positioning Timeout (Poor Signal)",
+            "{GN1} GPS Position Time Budget Exceeded",
+            "{GN2} GPS Positioning Timeout (Coarse)",
+            "{GN3} GPS Positioning Timeout (Fine)",
+            "{GN4} GPS Positioning Report Interval Too Short",
+            "{GN5} GPS Positioning Aiding Timeout",
+            "{GN6} GPS Positioning Timeout (Poor Signal)",
 
-            "40~ Interrupted by Downlink for Position",
-            "41~ Interrupted by Movement (Ended Too Quickly)",
-            "42~ Interrupted by Movement (Restarted Too Quickly)"
+            "{IN1} Interrupted by Downlink for Position",
+            "{IN2} Interrupted by Movement (Ended Too Quickly)",
+            "{IN3} Interrupted by Movement (Restarted Too Quickly)"
         ],
 
         shutdownType: [
-            "0~ Bluetooth Command",
-            "1~ LoRaWAN Command",
-            "2~ Magnetic Switch"
+            "{BC} Bluetooth Command",
+            "{LC} LoRaWAN Command",
+            "{MS} Magnetic Switch"
         ],
 
         eventType: [
-            "0~ Movement Started",
-            "1~ Movement In Progress",
-            "2~ Movement Ended",
-            "3~ Downlink Command"
+            "{MS} Movement Started",
+            "{MI} Movement In Progress",
+            "{ME} Movement Ended",
+            "{DC} Downlink Command"
         ],
 
         batteryLevel: [
-            "0~ Normal",
-            "1~ Low Battery"
+            "{N} Normal",
+            "{L} Low Battery"
         ],
 
         manDownStatus: [
-            "0~ Not Triggered",
-            "1~ Man Down Detected"
+            "{NT} Not Triggered",
+            "{MD} Man Down Detected"
         ],
 
         movementSinceLastPayload: [
-            "0~ No Movement",
-            "1~ Movement Detected"
+            "{NM} No Movement",
+            "{MD} Movement Detected"
         ],
 
         shockDetector: [
-            "0~ Not Triggered",
-            "1~ Shock Detected"
+            "{NT} Not Triggered",
+            "{SD} Shock Detected"
         ],
 
         tamperAlarm: [
-            "0~ Not Triggered",
-            "1~ Tamper Detected"
+            "{NT} Not Triggered",
+            "{TD} Tamper Detected"
         ]
     },
 
@@ -176,28 +186,23 @@ let PayloadFormatter = {
     },
 
     _timezoneDecode: function(tz) {
-        let tz_str = "";
-        tz = tz > 128 ? tz - 256 : tz;
+
+        let tzStr = (tz > 128) ? tz - 256 : tz;
 
         if (tz < 0) {
-            tz_str += "-";
+            tzStr += "-";
             tz = -tz;
         } else {
-            tz_str += "+";
+            tzStr += "+";
         }
 
         if (tz < 20)
-            tz_str += "0";
+            tzStr += "0";
 
-        tz_str += String(parseInt(tz / 2));
-        tz_str += ":";
+        tzStr += String(parseInt(tz / 2)) + ":";
 
-        if (tz % 2)
-            tz_str += "30";
-        else
-            tz_str += "00";
-
-        return tz_str;
+        tzStr += (tz % 2) ? "30" : "00";
+        return tzStr;
     },
 
     _parseTimeToDTString: function(timestamp, timezone) {
@@ -252,84 +257,93 @@ let PayloadFormatter = {
      *
      * @returns {Object} output - The output object, containing a "data" parameter of the decoded payload.
      */
-    formatPayload: function(input) {
+    formatPayload: function(input)
+    {
+        let output = {data: {}};
 
-        let output = {
-            data: {
-                payload: {},
-                device: {},
-                sensors: {}
-            }
-        };
 
-        let dataPort = parseInt(input.fPort);
+        /*
+         * Common Payload Header
+         */
+        output.data = {
+            payload: {},
+            device: {}
+        }
 
-        // Invalid ports
-        if (dataPort === 0 || dataPort === 100)
-            return output;
-
-        output.data.payload.port = dataPort;
         output.data.payload.hexadecimal = this._bytesToHexString(input.bytes);
-        output.data.payload.type = this.messaging.payloadType[(dataPort - 1)];
+        output.data.device.manufacturer = this.CONSTANTS.manufacturer;
+        output.data.device.model = this.CONSTANTS.model;
+
 
         let date = new Date();
         let timestamp = Math.trunc(date.getTime() / 1000);
         let offsetHours = Math.abs(Math.floor(date.getTimezoneOffset() / 60));
 
         output.data.payload.timestamp = this._parseTimeToDTString(timestamp, offsetHours) + this._timezoneDecode((offsetHours * 2));
-        output.data.device.manufacturer = this.messaging.manufacturer;
-        output.data.device.model = this.messaging.model;
 
 
-        /*
-         * Common Payload Header
-         */
-        if (dataPort <= 10 || dataPort === 12)
-        {
-            output.data.device.operatingMode = this.messaging.operationMode[input.bytes[0] & 0x03];
+        let dataPort = parseInt(input.fPort);
 
-            output.data.device.battery = {};
-            output.data.device.battery.level = this.messaging.batteryLevel[(input.bytes[0] & 0x04) ? 1 : 0];
+        output.data.payload.port = dataPort;
 
-            output.data.sensors.tamper = {};
-            output.data.sensors.tamper.status = this.messaging.tamperAlarm[(input.bytes[0] & 0x08) ? 1 : 0];
 
-            output.data.sensors.manDown = {};
-            output.data.sensors.manDown.status = this.messaging.manDownStatus[(input.bytes[0] & 0x10) ? 1 : 0];
+        // Invalid ports
+        if (dataPort < 1 || dataPort >= 13 || dataPort === 10 || dataPort === 11)
+            return output;
 
-            output.data.sensors.movement = {};
-            output.data.sensors.movement.status = this.messaging.movementSinceLastPayload[(input.bytes[0] & 0x20) ? 1 : 0]
+        output.data.payload.type = this.messaging.payloadType[(dataPort - 1)];
 
-            output.data.sensors.shock = {};
-            output.data.sensors.shock.status = this.messaging.shockDetector[(dataPort === 5 ? 1 : 0)]; //
 
-            if(dataPort === 2 || dataPort === 3) {
-                output.data.location = {};
-                output.data.location.requestType = this.messaging.positioningRequestType[(input.bytes[0] & 0x40) ? 1 : 0]
-            }
 
-            if(dataPort === 12) {
-                output.data.payload.frameCount = input.bytes[1] & 0x0f;
-                output.data.device.battery.voltage = (22 + ((input.bytes[1] >> 4) & 0x0f)) / 10;
-                // No temperature for port 12?
-            }
-            else {
-                output.data.payload.frameCount = input.bytes[2] & 0x0f;
-                output.data.device.battery.voltage = (22 + ((input.bytes[2] >> 4) & 0x0f)) / 10;
+        output.data.device.operatingMode = this.messaging.operationMode[input.bytes[0] & 0x03];
 
-                output.data.sensors.temperature = {
-                    environment: {
-                        celsius: this._signedHexToInt(this._bytesToHexString(input.bytes, 1, 1))
-                    }
+        output.data.device.battery = {};
+        output.data.device.battery.level = this.messaging.batteryLevel[(input.bytes[0] & 0x04) ? 1 : 0];
+
+
+        output.data.sensors = {};
+
+        output.data.sensors.tamper = {};
+        output.data.sensors.tamper.status = this.messaging.tamperAlarm[(input.bytes[0] & 0x08) ? 1 : 0];
+
+        output.data.sensors.manDown = {};
+        output.data.sensors.manDown.status = this.messaging.manDownStatus[(input.bytes[0] & 0x10) ? 1 : 0];
+
+        output.data.sensors.movement = {};
+        output.data.sensors.movement.status = this.messaging.movementSinceLastPayload[(input.bytes[0] & 0x20) ? 1 : 0]
+
+        output.data.sensors.shock = {};
+        output.data.sensors.shock.status = this.messaging.shockDetector[(dataPort === 5 ? 1 : 0)]; //
+
+        if(dataPort === this.CONSTANTS.ports.locationFixed || dataPort === this.CONSTANTS.ports.locationFailure) {
+            output.data.location = {};
+            output.data.location.requestType = this.messaging.positioningRequestType[(input.bytes[0] & 0x40) ? 1 : 0]
+        }
+
+        if(dataPort === 12) {
+            output.data.payload.frameCount = input.bytes[1] & 0x0f;
+            output.data.device.battery.voltage = (22 + ((input.bytes[1] >> 4) & 0x0f)) / 10;
+            // No temperature for port 12?
+        }
+        else {
+            output.data.payload.frameCount = input.bytes[2] & 0x0f;
+            output.data.device.battery.voltage = (22 + ((input.bytes[2] >> 4) & 0x0f)) / 10;
+
+            output.data.sensors.temperature = {
+                environment: {
+                    celsius: this._signedHexToInt(this._bytesToHexString(input.bytes, 1, 1))
                 }
             }
         }
 
 
+        /**
+         * Port-specific payloads.
+         */
         switch(dataPort)
         {
             // Heartbeat Payload
-            case 1 :
+            case this.CONSTANTS.ports.heartbeat :
                 output.data.device.rebootReason = this.messaging.rebootReason[this._bytesToInt(input.bytes, 3, 1)];
                 output.data.device.firmwareVersion = "v"
                     + ((input.bytes[4] >> 6) & 0x03)
@@ -339,7 +353,7 @@ let PayloadFormatter = {
 
 
             // Location Payload (Success)
-            case 2 : {
+            case this.CONSTANTS.ports.locationFixed : {
 
                 /*
                  * TODO: Need to test GPS for timed mode,
@@ -412,7 +426,7 @@ let PayloadFormatter = {
             }
 
             // Location Payload (Failure)
-            case 3 : {
+            case this.CONSTANTS.ports.locationFailure : {
 
                 /*
                  * TODO: Need to test Wi-Fi failure.
@@ -447,6 +461,7 @@ let PayloadFormatter = {
                 }
                 else // GPS Positioning
                 {
+                    // TODO: Notice that this outputs "null" and happened when "reason:"41~ Interrupted by Movement (Ended Too Quickly)""
                     pdop = input.bytes[parseLength++];
 
                     if (pdop !== 0xff)
@@ -462,6 +477,7 @@ let PayloadFormatter = {
                     else
                         output.data.location.pdop = "Unknown";
 
+                    // TODO: Notice that this outputs "undefined-undefined-undefined-undefined" and happened when "reason:"41~ Interrupted by Movement (Ended Too Quickly)""
                     output.data.location.gpsSatelliteCn =
                         input.bytes[parseLength]
                         + "-" + input.bytes[parseLength + 1]
@@ -472,7 +488,7 @@ let PayloadFormatter = {
             }
 
             // Shutdown Payload
-            case 4 :
+            case this.CONSTANTS.ports.shutdown :
                 output.data.device.shutdownType = this.messaging.shutdownType[this._bytesToInt(input.bytes, 3, 1)];
                 break;
 
@@ -541,13 +557,6 @@ let PayloadFormatter = {
                 break;
             }
 
-
-            case 10 : // unused port
-                break;
-            case 11 : // unused port
-                break;
-
-
             // GPS Limit Payload
             case 12 : {
                 output.data.location = {};
@@ -596,14 +605,17 @@ function decodeUplink(input) {
 /**
  * CLI arguments to run the script on the CLI.
  */
-const args = process.argv.slice(2);
-const port = args[0];
-const bytes = PayloadFormatter._hexToBytes(args[1]);
+if (typeof process !== 'undefined' && process.release.name === 'node')
+{
+    const args = process.argv.slice(2);
+    const port = args[0];
+    const bytes = PayloadFormatter._hexToBytes(args[1]);
 
-console.dir(
-    decodeUplink({
-        fPort: port,
-        bytes: bytes
-    }),
-    { depth: null }
-);
+    console.dir(
+        PayloadFormatter.formatPayload({
+            fPort: port,
+            bytes: bytes
+        }),
+        { depth: null }
+    );
+}
