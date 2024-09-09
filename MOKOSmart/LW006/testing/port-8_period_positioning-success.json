@@ -1,0 +1,75 @@
+{
+    "deduplicationId": "52e00f0b-f8d2-4feb-8ab0-115d91a3c76e",
+    "time": "2024-09-07T16:25:16.097+00:00",
+    "deviceInfo": {
+        "tenantId": "fff36549-75a5-40f7-a847-98807d88794d",
+        "tenantName": "Living Map",
+        "applicationId": "ae8e2900-2051-4f63-adae-a3ec362a3a6c",
+        "applicationName": "Living Map Equipment Testing",
+        "deviceProfileId": "48ae0d0c-5288-45d8-807b-3ce4d6d7e8b8",
+        "deviceProfileName": "Mokosmart LW006",
+        "deviceName": "GPS Tracker 005",
+        "devEui": "fbfe82ffffca2b9f",
+        "deviceClassEnabled": "CLASS_A",
+        "tags": {}
+    },
+    "devAddr": "fe00a03d",
+    "adr": true,
+    "dr": 4,
+    "fCnt": 1237,
+    "fPort": 8,
+    "confirmed": false,
+    "data": "PwCXAyAJHonJ+P6fAuYb",
+    "object": {
+        "batt_level": "63%",
+        "device_mode": "Periodic Mode",
+        "device_status_code": 0,
+        "time": "2024-09-07 16:25:16",
+        "pos_data_sign_code": 3,
+        "pdop": "25.0",
+        "age": "151s",
+        "pos_type": "Working Mode",
+        "pos_data_length": 9,
+        "charging_status": "no charging",
+        "port": 8,
+        "device_status": "No",
+        "payload_type": "L76 Pos Success",
+        "timestamp": 1725726316,
+        "hex_format_payload": "3f00970320091e89c9f8fe9f02e61b",
+        "longitude": "-2.3133466°",
+        "timezone": "UTC+00:00",
+        "latitude": "51.2346616°"
+    },
+    "rxInfo": [
+        {
+            "gatewayId": "221b99ccc0e6c94c",
+            "uplinkId": 47711,
+            "time": "2024-09-07T16:25:16.097+00:00",
+            "rssi": -112,
+            "snr": 4.5,
+            "context": "jyTU3w==",
+            "metadata": {
+                "regi": "EU868",
+                "gateway_lat": "51.243195527438964",
+                "region_config_id": "EU868",
+                "gateway_name": "sneaky-syrup-puma",
+                "gateway_long": "-2.306273361749551",
+                "gateway_h3index": "8c19582e58199ff",
+                "gateway_id": "112QV1nB3d35C4KjzmbYuUhMcZWnQ5woWH97i7rMjWp7knKzHJxG",
+                "network": "helium_iot",
+                "region_common_name": "EU868"
+            },
+            "crcStatus": "CRC_OK"
+        }
+    ],
+    "txInfo": {
+        "frequency": 867700000,
+        "modulation": {
+            "lora": {
+                "bandwidth": 125000,
+                "spreadingFactor": 8,
+                "codeRate": "CR_4_5"
+            }
+        }
+    }
+}

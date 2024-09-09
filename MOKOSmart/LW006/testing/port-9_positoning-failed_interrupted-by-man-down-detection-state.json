@@ -1,0 +1,73 @@
+{
+    "deduplicationId": "b8b5fd05-f12b-4cb3-ad99-f20d1d6d0355",
+    "time": "2024-09-06T20:46:22.007+00:00",
+    "deviceInfo": {
+        "tenantId": "fff36549-75a5-40f7-a847-98807d88794d",
+        "tenantName": "Living Map",
+        "applicationId": "ae8e2900-2051-4f63-adae-a3ec362a3a6c",
+        "applicationName": "Living Map Equipment Testing",
+        "deviceProfileId": "48ae0d0c-5288-45d8-807b-3ce4d6d7e8b8",
+        "deviceProfileName": "Mokosmart LW006",
+        "deviceName": "GPS Tracker 005",
+        "devEui": "fbfe82ffffca2b9f",
+        "deviceClassEnabled": "CLASS_A",
+        "tags": {}
+    },
+    "devAddr": "fe00a03d",
+    "adr": true,
+    "dr": 1,
+    "fCnt": 235,
+    "fPort": 9,
+    "confirmed": false,
+    "data": "ZAACAQ0A",
+    "object": {
+        "time": "2024-09-06 20:46:22",
+        "device_mode": "Periodic Mode",
+        "batt_level": "100%",
+        "hex_format_payload": "640002010d00",
+        "device_status": "Man Down",
+        "timestamp": 1725655582,
+        "failed_reason": "Interrupted by Man Down Detection State",
+        "payload_type": "Pos Failed",
+        "pos_data_length": 0,
+        "port": 9,
+        "pos_data": [],
+        "timezone": "UTC+00:00",
+        "pos_type": "Working Mode",
+        "device_status_code": 1,
+        "charging_status": "no charging",
+        "pos_data_sign": 13
+    },
+    "rxInfo": [
+        {
+            "gatewayId": "221b99ccc0e6c94c",
+            "uplinkId": 27279,
+            "time": "2024-09-06T20:46:22.007+00:00",
+            "rssi": -134,
+            "snr": -19.5,
+            "context": "FxA6Qg==",
+            "metadata": {
+                "gateway_lat": "51.243195527438964",
+                "gateway_h3index": "8c19582e58199ff",
+                "region_common_name": "EU868",
+                "region_config_id": "EU868",
+                "network": "helium_iot",
+                "gateway_name": "sneaky-syrup-puma",
+                "gateway_id": "112QV1nB3d35C4KjzmbYuUhMcZWnQ5woWH97i7rMjWp7knKzHJxG",
+                "regi": "EU868",
+                "gateway_long": "-2.306273361749551"
+            },
+            "crcStatus": "CRC_OK"
+        }
+    ],
+    "txInfo": {
+        "frequency": 868500000,
+        "modulation": {
+            "lora": {
+                "bandwidth": 125000,
+                "spreadingFactor": 11,
+                "codeRate": "CR_4_5"
+            }
+        }
+    }
+}

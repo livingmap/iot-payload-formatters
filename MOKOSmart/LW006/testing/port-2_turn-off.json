@@ -1,0 +1,70 @@
+{
+    "deduplicationId": "108abe6e-86b7-4a0e-ae4a-d0a4894eb4aa",
+    "time": "2024-09-07T16:36:33.320+00:00",
+    "deviceInfo": {
+        "tenantId": "fff36549-75a5-40f7-a847-98807d88794d",
+        "tenantName": "Living Map",
+        "applicationId": "ae8e2900-2051-4f63-adae-a3ec362a3a6c",
+        "applicationName": "Living Map Equipment Testing",
+        "deviceProfileId": "48ae0d0c-5288-45d8-807b-3ce4d6d7e8b8",
+        "deviceProfileName": "Mokosmart LW006",
+        "deviceName": "GPS Tracker 005",
+        "devEui": "fbfe82ffffca2b9f",
+        "deviceClassEnabled": "CLASS_A",
+        "tags": {}
+    },
+    "devAddr": "fe00a03d",
+    "adr": true,
+    "dr": 5,
+    "fCnt": 1241,
+    "fPort": 2,
+    "confirmed": false,
+    "data": "Nhdm3IEQAgIAAg==",
+    "object": {
+        "device_status_code": 0,
+        "turn_off_mode": "Button",
+        "timezone": "UTC+01:00",
+        "port": 2,
+        "timestamp": 1725726992,
+        "device_status": "No",
+        "charging_status": "no charging",
+        "batt_level": "54%",
+        "time": "2024-09-07 17:36:32",
+        "payload_type": "Turn off info",
+        "device_mode": "Periodic Mode",
+        "temperature": "23°C",
+        "hex_format_payload": "361766dc811002020002"
+    },
+    "rxInfo": [
+        {
+            "gatewayId": "221b99ccc0e6c94c",
+            "uplinkId": 39848,
+            "time": "2024-09-07T16:36:33.320+00:00",
+            "rssi": -124,
+            "snr": -8.5,
+            "context": "t4KBtg==",
+            "metadata": {
+                "gateway_name": "sneaky-syrup-puma",
+                "region_config_id": "EU868",
+                "gateway_lat": "51.243195527438964",
+                "network": "helium_iot",
+                "gateway_long": "-2.306273361749551",
+                "regi": "EU868",
+                "gateway_h3index": "8c19582e58199ff",
+                "gateway_id": "112QV1nB3d35C4KjzmbYuUhMcZWnQ5woWH97i7rMjWp7knKzHJxG",
+                "region_common_name": "EU868"
+            },
+            "crcStatus": "CRC_OK"
+        }
+    ],
+    "txInfo": {
+        "frequency": 868300000,
+        "modulation": {
+            "lora": {
+                "bandwidth": 125000,
+                "spreadingFactor": 7,
+                "codeRate": "CR_4_5"
+            }
+        }
+    }
+}

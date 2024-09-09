@@ -1,5 +1,10 @@
 let PayloadFormatter = {
 
+    CODEC: {
+        name: "lw001-bg-pro_chirpstack",
+        version: "0.1.0"
+    },
+
     CONSTANTS: {
         manufacturer: "MOKOsmart",
 
@@ -266,6 +271,7 @@ let PayloadFormatter = {
          * Common Payload Header
          */
         output.data = {
+            codec: this.CODEC,
             payload: {},
             device: {}
         }

@@ -1,0 +1,55 @@
+{
+    "deduplicationId": "e3ccd2a0-b865-4d92-ab4b-eada72d1edff",
+    "time": "2024-09-06T15:49:32.273+00:00",
+    "deviceInfo": {
+        "tenantId": "fff36549-75a5-40f7-a847-98807d88794d",
+        "tenantName": "Living Map",
+        "applicationId": "ae8e2900-2051-4f63-adae-a3ec362a3a6c",
+        "applicationName": "Living Map Equipment Testing",
+        "deviceProfileId": "48ae0d0c-5288-45d8-807b-3ce4d6d7e8b8",
+        "deviceProfileName": "Mokosmart LW006",
+        "deviceName": "GPS Tracker 005",
+        "devEui": "fbfe82ffffca2b9f",
+        "deviceClassEnabled": "CLASS_A",
+        "tags": {}
+    },
+    "devAddr": "fe00a03d",
+    "adr": true,
+    "dr": 0,
+    "fCnt": 2,
+    "fPort": 1,
+    "confirmed": false,
+    "data": "5B5EEAIAAA==",
+    "rxInfo": [
+        {
+            "gatewayId": "221b99ccc0e6c94c",
+            "uplinkId": 43601,
+            "time": "2024-09-06T15:49:32.273+00:00",
+            "rssi": -125,
+            "snr": -8,
+            "context": "8YVOvg==",
+            "metadata": {
+                "regi": "EU868",
+                "region_config_id": "EU868",
+                "network": "helium_iot",
+                "region_common_name": "EU868",
+                "gateway_long": "-2.306273361749551",
+                "gateway_lat": "51.243195527438964",
+                "gateway_id": "112QV1nB3d35C4KjzmbYuUhMcZWnQ5woWH97i7rMjWp7knKzHJxG",
+                "gateway_h3index": "8c19582e58199ff",
+                "gateway_name": "sneaky-syrup-puma"
+            },
+            "crcStatus": "CRC_OK"
+        }
+    ],
+    "txInfo": {
+        "frequency": 867300000,
+        "modulation": {
+            "lora": {
+                "bandwidth": 125000,
+                "spreadingFactor": 12,
+                "codeRate": "CR_4_5"
+            }
+        }
+    }
+}
