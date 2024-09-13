@@ -1,7 +1,7 @@
 let PayloadFormatter = {
 
     CODEC: {
-        name: "lw001-bg-pro_chirpstack",
+        name: "mokosmart_lw001-bg-pro_chirpstack",
         version: "0.1.0"
     },
 
@@ -21,102 +21,102 @@ let PayloadFormatter = {
     messaging: {
 
         payloadType: [ // index+1 relate to port numbers, hence the unused 9/10 indexed (port 10/11)
-            "{HB} Heartbeat",             // Port 1
-            "{LX} Location Fixed",        // Port 2
-            "{LF} Location Failure",      // Port 3
-            "{SD} Shutdown",              // Port 4
-            "{SH} Shock Detection",       // Port 5
-            "{MD} Man Down Detection",    // Port 6
-            "{TD} Tamper Detection",      // Port 7
-            "{AE} Action Event",          // Port 8
-            "{BC} Battery Consumption",   // Port 9
-            "{U1} Unused",                // Port 10
-            "{U2} Unused",                // Port 11
-            "{GL} GPS Limit"              // Port 12
+            "Heartbeat {6da}",             // Port 1
+            "Location Fixed {34f}",        // Port 2
+            "Location Failure {d34}",      // Port 3
+            "Shutdown {3bd}",              // Port 4
+            "Shock Detection {63a}",       // Port 5
+            "Man Down Detection {77d}",    // Port 6
+            "Tamper Detection {cb8}",      // Port 7
+            "Action Event {14a}",          // Port 8
+            "Battery Consumption {28b}",   // Port 9
+            "Unused {8b7}",                // Port 10
+            "Unused {b4c}",                // Port 11
+            "GPS Limit {5b8}"              // Port 12
         ],
 
         operationMode: [
-            "{SM} Standby Mode",
-            "{PM} Periodic Mode",
-            "{TM} Timing Mode",
-            "{MM} Motion Mode"
+            "Standby Mode {d8e}",
+            "Periodic Mode {9f0}",
+            "Timing Mode {c32}",
+            "Motion Mode {25b}"
         ],
 
         rebootReason: [
-            "{PF} Power Failure",
-            "{BR} Bluetooth Request",
-            "{LR} LoRaWAN Request",
-            "{NP} Normal Power On"
+            "Power Failure {c52}",
+            "Bluetooth Request {aab}",
+            "LoRaWAN Request {4bd}",
+            "Normal Power On {5a8}"
         ],
 
         positioningRequestType: [
-            "{OM} By Operating Mode",
-            "{DL} Downlink For Position Command"
+            "By Operating Mode {d5b}",
+            "Downlink For Position Command {bf3}"
         ],
 
         positioningMethod: [
-            "{WF} Wi-Fi Positioning",
-            "{BT} Bluetooth Positioning",
-            "{GN} GPS Positioning"
+            "Wi-Fi Positioning {bd8}",
+            "Bluetooth Positioning {e23}",
+            "GPS Positioning {c9e}"
         ],
 
         positioningFailedReason: [
-            "{WF1} Wi-Fi Positioning Report Interval Too Short",
-            "{WF2} Wi-Fi Positioning Timeout",
-            "{WF3} Wi-Fi Positioning Module Fault",
+            "Wi-Fi Positioning Report Interval Too Short {ac5}",
+            "Wi-Fi Positioning Timeout {8e0}",
+            "Wi-Fi Positioning Module Fault {3dd}",
 
-            "{BT1} Bluetooth Positioning Report Interval Too Short",
-            "{BT2} Bluetooth Positioning Timeout",
-            "{BT3} Bluetooth Broadcasting in Progress",
+            "Bluetooth Positioning Report Interval Too Short {fa0}",
+            "Bluetooth Positioning Timeout {5f5}",
+            "Bluetooth Broadcasting in Progress {6f7}",
 
-            "{GN1} GPS Position Time Budget Exceeded",
-            "{GN2} GPS Positioning Timeout (Coarse)",
-            "{GN3} GPS Positioning Timeout (Fine)",
-            "{GN4} GPS Positioning Report Interval Too Short",
-            "{GN5} GPS Positioning Aiding Timeout",
-            "{GN6} GPS Positioning Timeout (Poor Signal)",
+            "GPS Position Time Budget Exceeded {2b4}",
+            "GPS Positioning Timeout (Coarse) {12d}",
+            "GPS Positioning Timeout (Fine) {b5b}",
+            "GPS Positioning Report Interval Too Short {9a9}",
+            "GPS Positioning Aiding Timeout {e84}",
+            "GPS Positioning Timeout (Poor Signal) {e92}",
 
-            "{IN1} Interrupted by Downlink for Position",
-            "{IN2} Interrupted by Movement (Ended Too Quickly)",
-            "{IN3} Interrupted by Movement (Restarted Too Quickly)"
+            "Interrupted by Downlink for Position {a32}",
+            "Interrupted by Movement (Ended Too Quickly) {0f0}",
+            "Interrupted by Movement (Restarted Too Quickly) {d91}"
         ],
 
         shutdownType: [
-            "{BC} Bluetooth Command",
-            "{LC} LoRaWAN Command",
-            "{MS} Magnetic Switch"
+            "Bluetooth Command {64d}",
+            "LoRaWAN Command {16e}",
+            "Magnetic Switch {b78}"
         ],
 
         eventType: [
-            "{MS} Movement Started",
-            "{MI} Movement In Progress",
-            "{ME} Movement Ended",
-            "{DC} Downlink Command"
+            "Movement Started {a21}",
+            "Movement In Progress {ee2}",
+            "Movement Ended {2cf}",
+            "Downlink Command {b93}"
         ],
 
         batteryLevel: [
-            "{N} Normal",
-            "{L} Low Battery"
+            "Normal {b22}",
+            "Low Battery {aae}"
         ],
 
         manDownStatus: [
-            "{NT} Not Triggered",
-            "{MD} Man Down Detected"
+            "Not Triggered {d8b}",
+            "Man Down Detected {b8f}"
         ],
 
         movementSinceLastPayload: [
-            "{NM} No Movement",
-            "{MD} Movement Detected"
+            "No Movement {c65}",
+            "Movement Detected {bcc}"
         ],
 
         shockDetector: [
-            "{NT} Not Triggered",
-            "{SD} Shock Detected"
+            "Not Triggered {a2a}",
+            "Shock Detected {ef8}"
         ],
 
         tamperAlarm: [
-            "{NT} Not Triggered",
-            "{TD} Tamper Detected"
+            "Not Triggered {a24}",
+            "Tamper Detected {6df}"
         ]
     },
 
