@@ -29,9 +29,9 @@ let PayloadFormatter = {
             "Man Down Detection {77d}",    // Port 6
             "Tamper Detection {cb8}",      // Port 7
             "Action Event {14a}",          // Port 8
-            "Battery Consumption {28b}",   // Port 9
-            "Unused {8b7}",                // Port 10
-            "Unused {b4c}",                // Port 11
+            "Battery Report {28b}",        // Port 9
+            "Unused {xxx}",                // Port 10
+            "Unused {xxx}",                // Port 11
             "GPS Limit {5b8}"              // Port 12
         ],
 
@@ -192,7 +192,9 @@ let PayloadFormatter = {
 
     _timezoneDecode: function(tz) {
 
-        let tzStr = (tz > 128) ? tz - 256 : tz;
+        let tzStr = "";
+
+        tz = (tz > 128) ? tz - 256 : tz;
 
         if (tz < 0) {
             tzStr += "-";
@@ -207,6 +209,10 @@ let PayloadFormatter = {
         tzStr += String(parseInt(tz / 2)) + ":";
 
         tzStr += (tz % 2) ? "30" : "00";
+
+        if(tzStr === "+00:00" || tzStr === "-00:00")
+            tzStr = "Z";
+
         return tzStr;
     },
 
@@ -248,7 +254,7 @@ let PayloadFormatter = {
     },
 
     _doubleDigitNumber: function(number) {
-        return number < 10 ? "0" + number : number;
+        return number.toString().padStart(2, '0');
     },
 
 
